@@ -1,1 +1,48 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		form {
+			width: 300px;
+			margin: 0 auto;
+		}
+		label {
+			display: block;
+			margin-top: 10px;
+		}
+		input[type="text"], input[type="number"] {
+			width: 100%;
+			padding: 5px;
+			margin-top: 5px;
+		}
+		input[type="submit"] {
+			width: 100%;
+			padding: 5px;
+			margin-top: 10px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+	<h1>Money Form</h1>
+	<form action="submit_form.php" method="post">
+		<label for="name">Name:</label><br>
+		<input type="text" id="name" name="name" required><br>
+		<label for="income">Monthly Income:</label><br>
+		<input type="number" id="income" name="income" step="0.01" required><br>
+		<label for="expenses">Monthly Expenses:</label><br>
+		<input type="number" id="expenses" name="expenses" step="0.01" required><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
